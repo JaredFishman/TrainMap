@@ -25,20 +25,20 @@ Plotly.d3.csv('https://raw.githubusercontent.com/JaredFishman/TrainMap/master/Lo
             },
             colorscale: scl,
             cmin: 1,
-            color: unpack(rows, 'railroad'),
+            color: unpack(rows, 'railval'),
         },
     }];
 
 
     var layout = {
-        title: 'AAR Railroad Terminals',
+        //title: 'AAR Railroad Terminals',
         geo: {
             scope: 'north america',
             projection: {
                 type: 'equirectangular'
             },
             lonaxis: {
-                'range': [-130, -65]
+                'range': [-125, -60]
             },
             lataxis: {
                 'range': [15, 60]
